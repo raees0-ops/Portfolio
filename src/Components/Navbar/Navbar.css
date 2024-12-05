@@ -1,0 +1,140 @@
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+    padding: 0.5rem 0; /* Padding for the navbar */
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Sticks the navbar to the top */
+    z-index: 30; /* Ensures the navbar stays on top of other elements */
+    backdrop-filter: blur(50px); /* Applies a blur effect to the background */
+}
+
+.nav-content {
+    max-width: 1300px; /* Sets the maximum width of the nav container */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Vertically centers items in the flex container */
+    justify-content: space-between; /* Distributes items with space between them */
+    padding: 1rem 0; /* Adds vertical padding to the container */
+    margin: 0 auto; /* Centers the nav-content horizontally */
+}
+
+.logo{
+    width: 3rem;
+    height: auto;
+}
+
+/* Style for the unordered list inside .nav-content */
+.nav-content ul {
+    display: flex; /* Makes the list items display in a row */
+    align-items: center; /* Vertically center the items */
+    gap: 0.5rem; /* Adds space between the list items */
+    list-style: none; /* Removes default list styling (bullets) */
+    padding: 0; /* Removes any default padding from the list */
+    margin: 0; /* Removes any default margin from the list */
+}
+
+/* Style for the list items inside the unordered list */
+.nav-content li {
+    margin: 0 1.5rem; /* Adds horizontal margin between the list items */
+}
+.menu-item {
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 0.9rem; /* Sets the font size of the menu item */
+    font-weight: 500; /* Sets the font weight (semi-bold) */
+    color: rgb(255, 255, 255); /* Sets the text color, but use a valid hex code */
+    position: relative; /* Allows for positioning pseudo-elements or absolute positioning */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the menu item */
+}
+
+/* Style for the ::before pseudo-element of the .menu-item */
+.menu-item::before {
+    content: ""; /* Adds an empty content to the pseudo-element */
+    width: 2rem; /* Initial width of the pseudo-element */
+    height: 0.2rem; /* Height of the pseudo-element */
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%); /* Gradient background */
+    border-radius: 0.5rem; /* Rounded corners for the pseudo-element */
+    position: absolute; /* Positions the pseudo-element absolutely */
+    bottom: -0.6rem; /* Positions it slightly below the menu item */
+    opacity: 0; /* Starts as invisible */
+    transform: translateX(-1.5rem); /* Off-screen initially (to the left) */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Hover effect for the .menu-item, making ::before visible */
+.menu-item:hover::before {
+    width: 100%; /* Expands to fill the width of the menu item */
+    transform: translateX(0); /* Moves to its natural position */
+    opacity: 1; /* Makes the pseudo-element visible */
+}
+
+.contact-btn {
+    font-size: 0.9rem; /* Sets a large font size for the text */
+    font-weight: 500; /* Semi-bold font weight */
+    display: flex; /* Uses flexbox for alignment */
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%); /* Gradient background */
+    padding: 0.6rem 2rem; /* Vertical padding of 8.6rem, horizontal padding of 2rem */
+    outline: 1.5px solid transparent; /* Removes the outline and makes it transparent */
+    border-radius: 0.2rem; /* Slightly rounded corners */
+    color: #fff; /* White text color */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Optional: Add hover effect */
+.contact-btn:hover {
+    color: #a993fe; /* Text color */
+    background: #000; /* Background color */
+    outline: 1.5px solid #a993fe; /* Outline with a solid color */
+}
+
+
+.menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none; /* Adjust as needed (e.g., 'block' to make it visible) */
+  }
+
+  .menu-btn:hover {
+    color: #a993fe; /* Changes text/icon color to soft purple */
+    background: #000; /* Sets the background color to black */
+    border: 1px solid #a993fe; /* Adds a purple border */
+  }
+  @media (max-width: 425px) {
+    /* Adjust the logo size for smaller screens */
+    .logo {
+      width: 3rem; /* Sets the logo width to 10rem */
+      height: auto; /* Maintains aspect ratio of the logo */
+    }
+  }
+  
+  @media (max-width: 769px) {
+    .menu-btn {
+      display: block; /* Makes the menu button visible on smaller screens */
+    }
+    
+    .nav-content ul {
+      display: none; /* Hides the navigation list by default */
+    }
+  }
+
+  @media (max-width: 1325px) {
+    .nav-wrapper {
+      padding: 0 2rem; /* Adds horizontal padding to the navigation wrapper */
+    }
+  }
+  
+  
+    
+

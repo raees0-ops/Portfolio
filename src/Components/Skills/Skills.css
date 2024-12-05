@@ -1,0 +1,96 @@
+.skills-container {
+    margin: 4rem 0;
+    position: relative;
+  }
+
+  .skills-container::after,
+.skills-container::before {
+  content: "";
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%; /* Corrected from 2125rem to 50% for a circular shape */
+  background: #7c66e3;
+  position: absolute;
+  z-index: -1;
+  filter: blur(200px);
+}
+
+.skills-container::after {
+  top: -3rem;
+  left: -5rem;
+}
+
+.skills-container::before {
+ background: #7c66e3;
+ bottom: 0rem;
+ right: 0rem;
+}
+
+  
+  .skills-container h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+  }
+  
+  .skills-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .skills {
+    flex: 1;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+  }
+  
+  .skills-info {
+    flex: 1;
+    /* Add additional styles for .skills-info if needed */
+  }
+  
+  
+  @media (max-width: 1025px) {
+    .skills {
+      padding-left: 1rem; /* Adds some left padding to the skills container */
+    }
+  
+    .skills, 
+    .skills-content {
+      grid-gap: 2rem; /* Reduces the gap between grid items */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .skills-content {
+      flex-direction: column-reverse; /* Change layout to column-reverse on small screens */
+      gap: 3rem; /* Increase the gap between items */
+    }
+
+    .skills, 
+.skills-info {
+  width: 100%; /* Ensure both elements take up the full width */
+}
+
+.skills-container h5 {
+  font-size: 1.3rem; /* Adjust font size for heading */
+  margin-bottom: 2rem; /* Adds margin below the heading */
+}
+
+.skills-container::after ,
+.skills-container::before{
+  width: 18rem ;
+  height: 18rem;
+}
+
+  }
+
+  @media (max-width: 600px) {
+    .skills-container {
+      padding: 0; /* Remove padding on small screens */
+    }
+  }
+  
+  
+  

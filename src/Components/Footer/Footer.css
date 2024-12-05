@@ -1,0 +1,7 @@
+.footer {
+    font-size: 0.8rem; /* Set font size for the footer */
+    text-align: center; /* Align text to the center */
+    background: linear-gradient(90deg, #303072 0%, #423477 100%); /* Apply a gradient background */
+    padding: 1rem; /* Add padding inside the footer */
+  }
+  

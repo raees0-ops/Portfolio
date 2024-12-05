@@ -1,0 +1,75 @@
+.skills-info-card {
+    min-height: 23rem;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    background: rgba(22, 17, 47, 0.398); /* Semi-transparent background */
+    backdrop-filter: blur(1rem); /* Apply a blur effect to the background */
+    
+  }
+  
+  .skills-info-card h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6 100%); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    border-bottom: 1.5px solid #6751b9; /* Border below the text */
+  }
+
+  .skills-info-content {
+    padding: 2rem; /* Adds padding inside the content area */
+  }
+  
+  .skill-info {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Distribute space between items */
+  
+  }
+  
+  .skill-info p {
+    font-size: 1rem; /* Set the font size for the skill name */
+    font-weight: 500; /* Make the text slightly bold */
+  
+  }
+
+  .skill-info .percentage {
+    color: #dd8cfa; /* Sets the text color for the percentage */
+  }
+  
+  .skill-progress-bg {
+    width: 100%; /* Full width of the container */
+    height: 0.5rem; /* Set the height of the progress bar background */
+    background: #382e68; /* Dark background color for the progress bar */
+    border-radius: 0.5rem; /* Rounded corners for the progress bar */
+    margin: 1rem 0; /* Adds vertical space around the progress bar */
+    overflow: hidden; /* Ensures the progress doesn't overflow outside the rounded corners */
+  }
+
+  .skill-progress {
+    width: 0%; /* Initial width is set to 0% to represent no progress */
+    height: 0.5rem; /* Set the height of the progress bar */
+    background: linear-gradient(90deg, #aa94fe 0%, #7d60e6 50%); /* Gradient background from light purple to dark purple */
+    border-radius: 8.5rem; /* Rounded corners for the progress bar */
+    transition: all 0.5s ease-in-out; /* Smooth transition when the progress changes */
+  }
+  
+
+  @media (max-width: 1025px) {
+  .skills-info-card h6 {
+    font-size: 1.1rem; /* Adjust font size for h6 inside .skills-info-card */
+  }
+  
+  .skill-info p {
+    font-size: 0.9rem; /* Adjust font size for paragraphs inside .skill-info */
+  }
+  
+  .skills-info-content {
+    padding: 1.5rem; /* Add padding to .skills-info-content */
+  }
+}
+  
+  
+  
+  
