@@ -31,7 +31,12 @@ const Navbar = () => {
                             <a href="" className="menu-item">Contact Me</a>
                         </li>
 
-                        <button className="contact-btn" onClick={() => { }}>Hire Me</button>
+                        <button className="contact-btn" onClick={() => {
+    const link = document.createElement('a');
+    link.href = 'Raees Resume.pdf';  // Path to your PDF
+    link.download = 'Raees_Resume.pdf';     // Download filename
+    link.click();
+  }}>Hire Me</button>
                     </ul>
 
                     <button className="menu-btn"  onClick={toggleMenu}  >
