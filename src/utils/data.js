@@ -6,7 +6,7 @@ skills: [
 { skill: "HTML5", percentage: "80%" },
 { skill: "CSS3 (Sass/SCSS)", percentage: "90%" },
 { skill: "JavaScript", percentage: "75%" },
-{ skill: "React.js", percentage: "80%" },
+{ skill: "React js", percentage: "80%" },
 { skill: "AngularJS", percentage: "75%" }
 ]
 },
@@ -16,7 +16,7 @@ icon: "https://cdn3d.iconscout.com/3d/premium/thumb/web-development-3d-illustrat
 skills: [
 { skill: "Java", percentage: "80%" },
 { skill: "Spring Boot", percentage: "75%" },
-{ skill: "Node.js", percentage: "70%" },
+{ skill: "C#", percentage: "60%" },
 { skill: "JPA & Hibernate", percentage: "70%" }
 ]
 },
@@ -51,22 +51,46 @@ skills: [
 ];
 
 export const WORK_EXPERIENCE = [
+  {
+    title: "JAVA Full Stack Developer at Techno-Solution (Miraj)",
+    date: "March 2024 – Present",
+    responsibilities: [
+    "Design and develop REST APIs using Spring Boot.",
+    "Work with relational databases like MySQL or SQL Server.",
+    "Write optimized SQL queries and use JPA/Hibernate for ORM.",
+    "Use exception handling and logging tools like SLF4J or Logback for backend diagnostics.",
+    "Implement security features using Spring Security and JWT (JSON Web Tokens).",
+    "Build dynamic and responsive web interfaces using React.js",
+    "Consume backend APIs using Axios/Fetch.",
+    "Use tools like Maven for building Java projects.",
+    "Troubleshoot issues in both frontend and backend."
+    ]
+    },
 {
-title: "Junior Full Stack Developer at Techno-Solution (Miraj)",
-date: "March 2023 – Present",
+title: "React Developer at Techno-Solution (Miraj)",
+date: "March 2023 – March 2024",
 responsibilities: [
-"Designed multiple dynamic and browser-compatible pages using HTML5, CSS3, and JavaScript.",
-"Designed and implemented RESTful APIs using Spring Boot to support business functionalities.",
-"Developed dynamic front-end components using AngularJS and React, ensuring responsiveness and cross-browser compatibility.",
-"Integrated third-party APIs to enhance application features, including payment gateways.",
-"Optimized SQL Server queries to improve database performance and scalability.",
-"Collaborated with a team of 5 developers for two months to create an interactive and user-friendly website experience.",
-"Delivered state-of-the-art user interface solutions using React.js, enhancing UI functionality.",
-"Developed progressive web applications with React, enhancing mobile site performance."
+"Build responsive and reusable UI components using React.js.",
+"Maintain clean, modular, and scalable code using JavaScript (ES6+) and JSX.",
+"Implement state management solutions like React Context API or Redux for managing application state efficiently.",
+"Fetch and handle data from RESTful APIs and display it dynamically using Axios or Fetch API.",
+"Understand and use component lifecycle methods/hooks (useEffect, useState, etc.) for data loading and updates.",
+"Identify and fix bugs in existing code.",
+"Ensure the UI works smoothly across different web browsers and devices.",
+"Work closely with designers, backend developers, and QA teams to ensure consistent and quality user experiences."
 ]
-},{
+},
+{
+title: "Intern at Techno-Solution (Miraj)",
+date: "October 2022 – March 2023",
+responsibilities: [
+"Assistedinmaintainingactive communicationwith 3 clients to ensure thatthe developedclient sites met their requirements,thereby achieving customer satisfaction.",
+"Revamped client web pages using HTML, CSS, JavaScript, and Bootstrap, customized to specific requirements;expanded Frontendtechnical proficiency, adhering tocoding standards, andefficiently resolving complex coding issues.",
+"Debugged and resolved front-end and back-end issues to enhance user experience"
+]
+},
 
-
+{
 title: "Personal Project:  E-Commerce Website",
     date: "None",
     responsibilities: [
